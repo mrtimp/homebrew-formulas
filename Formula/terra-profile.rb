@@ -5,20 +5,20 @@
 class TerraProfile < Formula
   desc "Automatically set the AWS_PROFILE for Terraform/Terragrunt based on configuration"
   homepage "https://github.com/mrtimp/terra-profile"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mrtimp/terra-profile/releases/download/1.0.2/terra-profile_1.0.2_darwin_amd64.tar.gz"
-      sha256 "5507cf2dfa7c6615e6fe4ae7a1894c8436fb19f6823dec0e124b2e83fb07d584"
+      url "https://github.com/mrtimp/terra-profile/releases/download/1.0.3/terra-profile_1.0.3_darwin_amd64.tar.gz"
+      sha256 "76451abb6e79ae4e5067318cc954878e711af96244e0068cb300bcf821200ba3"
 
       def install
         bin.install "terra-profile"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mrtimp/terra-profile/releases/download/1.0.2/terra-profile_1.0.2_darwin_arm64.tar.gz"
-      sha256 "e9f9c9215ddcec77d43dae15a18ac3d494bc5cfcc3493bcf3bb4cd57636c60c6"
+      url "https://github.com/mrtimp/terra-profile/releases/download/1.0.3/terra-profile_1.0.3_darwin_arm64.tar.gz"
+      sha256 "c0a39147fce6c9272b6be0874758b969b63d020c159884a0ad735fad36817711"
 
       def install
         bin.install "terra-profile"
@@ -28,15 +28,15 @@ class TerraProfile < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/mrtimp/terra-profile/releases/download/1.0.2/terra-profile_1.0.2_linux_amd64.tar.gz"
-      sha256 "99d8a3049270c5c501d9b9877e9bc59dd83b095d9742ab40f73d65cb2cab6447"
+      url "https://github.com/mrtimp/terra-profile/releases/download/1.0.3/terra-profile_1.0.3_linux_amd64.tar.gz"
+      sha256 "f6c3fbfd57f3089f8d52e41765d05caa81722935f5bcd9a88eedb0b8a4067d80"
       def install
         bin.install "terra-profile"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/mrtimp/terra-profile/releases/download/1.0.2/terra-profile_1.0.2_linux_arm64.tar.gz"
-      sha256 "9c03849847c1d2578d0e72c1b70fe4d2b0bc369db4aa0e56c663424c95204d8b"
+      url "https://github.com/mrtimp/terra-profile/releases/download/1.0.3/terra-profile_1.0.3_linux_arm64.tar.gz"
+      sha256 "0aa2e5f1d119d6852f9d04d1dbd92e4bb3c0651c9e0c33cf2e2f9946ffa0cb88"
       def install
         bin.install "terra-profile"
       end
