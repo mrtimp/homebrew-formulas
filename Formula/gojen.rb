@@ -5,20 +5,20 @@
 class Gojen < Formula
   desc "Go project generator"
   homepage "https://github.com/mrtimp/gojen"
-  version "0.1"
+  version "0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mrtimp/gojen/releases/download/0.1/gojen_0.1_darwin_amd64.tar.gz"
-      sha256 "31edd3de6d8d601c4547b5d3c1f8b321eaa63e708f0ab0824f9950b19de9ae12"
+      url "https://github.com/mrtimp/gojen/releases/download/0.2/gojen_0.2_darwin_amd64.tar.gz"
+      sha256 "8054fb14be1fb4e726d62b3740362a28671f4126ea29e867a2d90323acb6e665"
 
       def install
         bin.install "gojen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mrtimp/gojen/releases/download/0.1/gojen_0.1_darwin_arm64.tar.gz"
-      sha256 "f78072d990c2b08ebc0e6ef00b441d0f75914f07ca4b68adcd84f96519b3e698"
+      url "https://github.com/mrtimp/gojen/releases/download/0.2/gojen_0.2_darwin_arm64.tar.gz"
+      sha256 "a2e599d44de12854f6958021b109105d8940db69fb7e6d96a89d301a90c1d897"
 
       def install
         bin.install "gojen"
@@ -28,15 +28,15 @@ class Gojen < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/mrtimp/gojen/releases/download/0.1/gojen_0.1_linux_amd64.tar.gz"
-      sha256 "4353c0f53c78178e129259ecc1b032315bd095a17cebb31a1a236441ff538245"
+      url "https://github.com/mrtimp/gojen/releases/download/0.2/gojen_0.2_linux_amd64.tar.gz"
+      sha256 "f35d7d772a7e2d2f5ac72145ecb56abffb5475c946961222fd9f3248f4160fe6"
       def install
         bin.install "gojen"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/mrtimp/gojen/releases/download/0.1/gojen_0.1_linux_arm64.tar.gz"
-      sha256 "8a911a52d5d40f3e566872cbd345875600fd80af07bd86ade75448906acc5e8e"
+      url "https://github.com/mrtimp/gojen/releases/download/0.2/gojen_0.2_linux_arm64.tar.gz"
+      sha256 "4c9acd25b98d3644b4959dc2c416c3cc076197cb49eafb9321ecf0ae1d7129af"
       def install
         bin.install "gojen"
       end
